@@ -135,3 +135,99 @@
 .article-sentiment-score.sentiment-positive { color: #2e7d32; background-color: transparent; }
 .article-sentiment-score.sentiment-negative { color: #c62828; background-color: transparent; }
 .article-sentiment-score.sentiment-neutral { color: #555555; background-color: transparent; }
+
+.form-and-recent-container {
+  margin-bottom: 30px;
+}
+
+.ticker-form {
+  display: flex;
+  /* justify-content: center; -- remove this if you want it left-aligned within its container */
+  margin-bottom: 10px; /* Reduced margin if recent searches are below */
+  align-items: stretch; /* Make buttons same height as input */
+}
+
+.ticker-form input[type="text"] {
+  /* width: 300px; -- let it be more flexible or set a max-width */
+  max-width: 350px;
+  /* margin-right: 10px; -- gap property on form handles spacing */
+  flex-grow: 1; /* Allow input to grow */
+}
+
+.ticker-form button {
+  margin-left: 10px; /* Space between input and analyze, and analyze and clear */
+}
+
+.clear-button {
+  background-color: #6c757d; /* Bootstrap secondary grey */
+  color: white;
+  border: none;
+  padding: 0 20px; /* Adjust padding as needed */
+  font-size: 1em; /* Match other button */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.clear-button:hover {
+  background-color: #5a6268;
+}
+
+
+.recent-searches-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 0; /* Some padding around the recent items */
+  /* background-color: #f8f9fa; Optional: slight background to group them */
+  /* border-radius: 4px; */
+  font-size: 0.9em;
+}
+
+.recent-searches-container strong {
+  margin-right: 5px;
+  color: #555;
+}
+
+.recent-search-item {
+  background-color: #e9ecef; /* Light grey for buttons */
+  color: #343a40; /* Darker text */
+  border: 1px solid #ced4da;
+  padding: 4px 10px;
+  border-radius: 15px; /* Pill shape */
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.recent-search-item:hover {
+  background-color: #007bff; /* Primary blue on hover */
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Styles for articles with images (if you enhance this part) */
+.article-item {
+  /* ... existing styles ... */
+  display: flex; /* For side-by-side image and content */
+  gap: 15px;
+}
+
+.article-image-container {
+  flex-shrink: 0; /* Prevent image container from shrinking */
+  width: 100px; /* Or desired width for small article images */
+  height: 80px; /* Or desired height */
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content {
+  flex-grow: 1; /* Allow text content to take remaining space */
+}

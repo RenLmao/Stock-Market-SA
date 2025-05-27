@@ -1,0 +1,16 @@
+# Environment variables
+backend/.env
+
+# Python virtual environment
+backend/venv/
+backend/__pycache__/
+backend/flask_cache/ # Also ignore the cache directory
+
+# Node modules
+frontend/node_modules/
+frontend/build/
+
+# IDE specific files
+.idea/
+.vscode/
+*.DS_Store
