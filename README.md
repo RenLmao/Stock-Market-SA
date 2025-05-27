@@ -92,18 +92,18 @@ Make sure you have the following installed before proceeding:
         pip install -r requirements.txt
         ```
 *   The NLTK VADER lexicon (used in sentiment analysis) will download on the first run automatically if not already installed. If there is an issue, you can download manually by opening a Python interpreter in your activated `venv` and running:
-```python
+      ```python
         import nltk
         nltk.download('vader_lexicon')
         nltk.download('punkt')
         exit()
-```
+         ```
 
 4.  **Frontend Setup (React):**
     *   Navigate to the `frontend` directory:
-```bash
+         ```bash
         cd frontend
-```
+         ```
 *   Install Node.js dependencies:
         ```bash
         npm install
@@ -118,9 +118,10 @@ You need to run the backend and frontend servers simultaneously.
     *   Navigate to the `backend` directory (`cd Stock-Market-SA/backend`).
     *   Ensure your Python virtual environment is active.
     *   Run the Flask app:
-        ```bash
-python app.py
-    ```
+        ```
+        bash
+         python app.py
+          ```
     *   The backend server will begin, typically at `http://localhost:5000`. You will see log messages in this terminal.
 
 2.  **Start the Frontend Server:**
@@ -129,7 +130,7 @@ python app.py
 *   Run the React development server:
         ```bash
         npm start
-        ```
+          ```
     *   This should automatically open the application in your default web browser at `http://localhost:3000`. If not, open it by hand.
 
 Now you are ready to utilize the Stock Market Sentiment Analyzer!
