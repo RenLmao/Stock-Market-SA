@@ -97,7 +97,7 @@ Make sure you have the following installed before proceeding:
         nltk.download('vader_lexicon')
         nltk.download('punkt')
         exit()
-        ```
+```
 
 4.  **Frontend Setup (React):**
     *   Navigate to the `frontend` directory:
