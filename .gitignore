@@ -1,18 +1,33 @@
-# Environment variables
-backend/.env
+# General
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Python virtual environment
+# Node / NPM
+node_modules/
+frontend/node_modules/ # More specific if frontend is a subdir
+frontend/build/        # <<< ADD THIS LINE if not already present
+coverage/
+.npm
+*.tgz
+
+# Python
 backend/venv/
 backend/__pycache__/
-backend/flask_cache/ # Also ignore the cache directory
-backend/historical_sentiment_data.json
+backend/flask_cache/
+backend/historical_sentiment_data.json # Assuming you don't want to commit this runtime data
+*.pyc
+*.pyo
+.Python
+celerybeat-schedule
+*.egg-info/
+.env
+backend/.env # More specific
 
-# Node modules
-frontend/node_modules/
-frontend/build/
-
-# IDE specific files
+# IDE / Editor specific
 .idea/
 .vscode/
-*.DS_Store
-
+*.sublime-project
+*.sublime-workspace
