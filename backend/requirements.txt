@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+Flask-Caching
+python-dotenv
+requests
+nltk

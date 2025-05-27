@@ -1,0 +1,119 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34; /* Dark header */
+  padding: 20px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.App-header .logo-title-link { /* Wrapper for logo and title */
+  text-decoration: none;
+  color: white;
+}
+
+.App-header .logo-title-link h1 {
+  margin: 0;
+  font-size: 1.8em;
+  transition: color 0.2s ease-in-out;
+}
+.App-header .logo-title-link:hover h1 {
+  color: #61dafb; /* React blue on hover */
+}
+
+
+.App-header nav a {
+  color: #b0bec5; /* Lighter grey for nav links */
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.App-header nav a:hover,
+.App-header nav a.active { /* Style for active link (requires NavLink) */
+  color: #61dafb;
+  border-bottom-color: #61dafb;
+}
+
+.App main {
+  flex-grow: 1; /* Allows main content to fill available space */
+  padding: 20px 40px; /* Add some padding around main content */
+  max-width: 1200px; /* Max width for content area */
+  width: 100%;
+  margin: 0 auto; /* Center content */
+  box-sizing: border-box;
+}
+
+.App-footer {
+  background-color: #1c1e22; /* Slightly darker footer */
+  padding: 20px;
+  color: #a0a0a0; /* Lighter text for footer */
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 1px solid #383c42;
+}
+
+/* General utility classes */
+.error-message {
+  color: #d32f2f; /* Material Design red for errors */
+  background-color: #ffebee;
+  border: 1px solid #d32f2f;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  padding: 20px;
+}
+
+/* Basic form styling (can be overridden by component-specific CSS) */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; /* Input takes available space */
+  min-width: 200px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button[type="submit"]:disabled {
+  background-color: #adb5bd; /* Grey for disabled */
+  cursor: not-allowed;
+}
