@@ -83,14 +83,14 @@ Make sure you have the following installed before proceeding:
         ```bash
         python -m venv venv
         ```
-```
+
     *   Switch to the virtual environment:
         *   Windows: `venv\Scripts\activate`
         *   macOS/Linux: `source venv/bin/activate`
     *   Install the Python dependencies:
-        ```bash
-pip install -r requirements.txt
-```
+        ``` bash
+        pip install -r requirements.txt
+        ```
 *   The NLTK VADER lexicon (used in sentiment analysis) will download on the first run automatically if not already installed. If there is an issue, you can download manually by opening a Python interpreter in your activated `venv` and running:
 ```python
         import nltk
@@ -103,7 +103,7 @@ pip install -r requirements.txt
     *   Navigate to the `frontend` directory:
 ```bash
         cd frontend
-        ```
+```
 *   Install Node.js dependencies:
         ```bash
         npm install
@@ -134,4 +134,3 @@ python app.py
 
 Now you are ready to utilize the Stock Market Sentiment Analyzer!
 
-## Project Structure
