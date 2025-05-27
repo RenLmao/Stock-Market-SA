@@ -249,3 +249,110 @@
   color: #666;
   margin-top: 10px;
 }
+
+/* --- General Button Modernization (can go in App.css or here if specific) --- */
+button, .button-like { /* Use .button-like for <a> tags styled as buttons */
+  padding: 10px 20px; /* Good padding */
+  font-size: 1em;
+  font-weight: 500; /* Slightly bolder */
+  border-radius: 6px; /* Softer corners */
+  border: 1px solid transparent; /* Base border */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06); /* Subtle shadow */
+  text-decoration: none; /* For <a> tags styled as buttons */
+  display: inline-flex; /* For aligning icon and text if you add icons */
+  align-items: center;
+  justify-content: center;
+}
+
+button:disabled, .button-like:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* --- Primary Analyze Button --- */
+.ticker-form button[type="submit"] {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border-color: #007bff;
+}
+.ticker-form button[type="submit"]:hover:not(:disabled) {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1); /* Slightly more shadow on hover */
+  transform: translateY(-1px); /* Slight lift */
+}
+.ticker-form button[type="submit"]:active:not(:disabled) {
+    transform: translateY(0px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+
+/* --- Clear Button --- */
+.clear-button {
+  background-color: #6c757d; /* Secondary grey */
+  color: white;
+  border-color: #6c757d;
+  margin-left: 10px; /* Keep the space */
+}
+.clear-button:hover:not(:disabled) {
+  background-color: #5a6268;
+  border-color: #545b62;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.clear-button:active:not(:disabled) {
+    transform: translateY(0px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+
+/* --- Recent Search Tags --- */
+.recent-search-item {
+  padding: 6px 12px; /* Slightly smaller padding for tags */
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #f0f2f5; /* Lighter grey */
+  color: #495057; /* Darker text */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 16px; /* Pill shape */
+  box-shadow: none; /* Typically no shadow for tags, or very minimal inset */
+}
+.recent-search-item:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: translateY(-1px); /* Optional slight lift */
+}
+
+/* --- Chart Toggle Buttons & Price Range Buttons --- */
+.chart-toggle-buttons button,
+.price-chart-controls button {
+  padding: 8px 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #fff; /* White background */
+  color: #495057; /* Text color */
+  border: 1px solid #ced4da; /* Standard border */
+  border-radius: 6px; /* Consistent with other buttons */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.chart-toggle-buttons button:hover:not(.active),
+.price-chart-controls button:hover:not(.active) {
+  background-color: #f8f9fa; /* Very light grey on hover */
+  border-color: #adb5bd;
+  transform: translateY(-1px);
+}
+
+.chart-toggle-buttons button.active,
+.price-chart-controls button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  font-weight: bold; /* Make active button bolder */
+  box-shadow: 0 1px 3px rgba(0,123,255,0.3); /* Shadow matching active color */
+  transform: translateY(-1px);
+}
