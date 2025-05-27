@@ -30,18 +30,18 @@ A front-to-back application that interprets the sentiment of latest news stories
 *   `python-dotenv` (for environment variable management)
     *   `Flask-Caching` (using FileSystemCache for local cache)
 *   **APIs:**
-    *   [NewsAPI.org](https://newsapi.org/) (for news articles)
-    *   [Financial Modeling Prep (FMP)](https://site.financialmodelingprep.com/developer/docs/) (for stock prices history)
+    *   [NewsAPI.org](https://newsapi.org/) 
+    *   [Financial Modeling Prep ](https://site.financialmodelingprep.com/developer/docs/) 
 
 ## Prerequisites
 
 Make sure you have the following installed before proceeding:
 
 *   **Python 3.8+:** [Download Python](https://www.python.org/downloads/)
-*   Make sure `pip` (Python package manager) is installed and in your PATH.
+*   Make sure `pip`  is installed and in your PATH.
 *   **Node.js and npm:**
-    Download Node.js (npm comes bundled with Node.js)
-    *   `npm` (Node Package Manager) is required for frontend dependencies.
+    Download Node.js 
+    *   `npm` is required for frontend dependencies.
 *   **Git:** For cloning the repository.
 
 ## Setup & Installation
@@ -55,10 +55,10 @@ Make sure you have the following installed before proceeding:
 2.  **API Key Setup (Important!):**
     The application needs API keys for two services. You should get your own free API keys.
 
-    *   **NewsAPI.org Key (for news articles):**
+    *   **NewsAPI.org Key:**
 1.  Go to [https://newsapi.org/](https://newsapi.org/) and create a free account.
     2.  Find your API key on your account dashboard.
-    *   **Financial Modeling Prep (FMP) Key (for stock prices):**
+    *   **Financial Modeling Prep Key:**
         1.  Go to [https://site.financialmodelingprep.com/register](https://site.financialmodelingprep.com/register) and create a free plan.
 2.  Your API key will be in your FMP dashboard.
 
@@ -74,12 +74,12 @@ Make sure you have the following installed before proceeding:
         5.  Save the file. This file is specifically ignored by Git in order to store your keys securely.
         6.  Return to the project root: `cd .`
 
-3.  **Backend Setup (Python Flask):**
+3.  **Backend Setup:**
 *   Navigate to the `backend` directory:
         ```bash
         cd backend
         ```
-    *   Install a Python virtual environment (highly recommended):
+    *   Install a Python virtual environment:
         ```bash
         python -m venv venv
         ```
@@ -91,7 +91,7 @@ Make sure you have the following installed before proceeding:
         ``` bash
         pip install -r requirements.txt
         ```
-*   The NLTK VADER lexicon (used in sentiment analysis) will download on the first run automatically if not already installed. If there is an issue, you can download manually by opening a Python interpreter in your activated `venv` and running:
+*   The NLTK VADER lexicon will download on the first run automatically if not already installed. If there is an issue, you can download manually by opening a Python interpreter in your activated `venv` and running:
       ```python
         import nltk
         nltk.download('vader_lexicon')
@@ -99,7 +99,7 @@ Make sure you have the following installed before proceeding:
         exit()
          ```
 
-4.  **Frontend Setup (React):**
+4.  **Frontend Setup:**
     *   Navigate to the `frontend` directory:
          ```bash
         cd frontend
