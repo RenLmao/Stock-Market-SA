@@ -47,7 +47,8 @@ Make sure you have the following installed before proceeding:
 ## Setup & Installation
 
 1.  **Clone the Repository:**
-    ```bash git clone https://github.com/RenLmao/Stock-Market-SA.git
+    ```bash
+    git clone https://github.com/RenLmao/Stock-Market-SA.git
     cd Stock-Market-SA
     ```
 
