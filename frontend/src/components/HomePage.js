@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './HomePage.css'; // Specific styles for HomePage
+import './HomePage.css'; // Your custom CSS
 
 const HomePage = () => {
   const [generalNews, setGeneralNews] = useState([]);
@@ -25,10 +25,10 @@ const HomePage = () => {
     fetchGeneralNews();
   }, []);
 
-  const getSentimentColor = (score) => {
-    if (score > 0.05) return 'positive-sentiment';
-    if (score < -0.05) return 'negative-sentiment';
-    return 'neutral-sentiment';
+  const getSentimentColor = (score) => { // Ensure this matches your CSS classes or style logic
+    if (score > 0.05) return 'positive-sentiment'; // Or actual color 'green'
+    if (score < -0.05) return 'negative-sentiment'; // Or actual color 'red'
+    return 'neutral-sentiment'; // Or actual color 'grey'
   };
 
   return (
@@ -44,7 +44,7 @@ const HomePage = () => {
       {!isLoading && !error && generalNews.length > 0 && (
         <div className="news-grid">
           {generalNews.map((article, index) => (
-            <div key={article.url || index} className="news-card"> {/* Use URL as key if available */}
+            <div key={article.url || index} className="news-card">
               {article.imageUrl && (
                 <div className="news-image-container">
                   <img src={article.imageUrl} alt={article.title || 'News image'} className="news-image" />
@@ -63,7 +63,7 @@ const HomePage = () => {
                     {article.publishedAt ? new Date(article.publishedAt).toLocaleDateString() : 'N/A'}
                   </span>
                   {article.sentiment_score !== undefined && (
-                     <span className={`news-sentiment-label ${getSentimentColor(article.sentiment_score)}`}>
+                     <span className={`news-sentiment-label ${getSentimentColor(article.sentiment_score)}`}> {/* Ensure CSS class matches */}
                        {article.sentiment_label} ({article.sentiment_score.toFixed(2)})
                      </span>
                   )}

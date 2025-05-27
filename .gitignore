@@ -5,6 +5,7 @@ backend/.env
 backend/venv/
 backend/__pycache__/
 backend/flask_cache/ # Also ignore the cache directory
+backend/historical_sentiment_data.json
 
 # Node modules
 frontend/node_modules/
@@ -14,3 +15,4 @@ frontend/build/
 .idea/
 .vscode/
 *.DS_Store
+

@@ -231,3 +231,21 @@
 .article-content {
   flex-grow: 1; /* Allow text content to take remaining space */
 }
+
+.historical-chart-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: 400px; /* Or max-height and let content define it */
+  position: relative; /* Important for chart.js responsiveness */
+}
+
+.chart-footnote {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+}
